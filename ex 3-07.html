@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text input with data list</title>
+</head>
+<body>
+    <h3>Places I want to visit</h3>
+    <hr>
+    <form>
+        Conutry : <input type="text" name="country" list="countries"><br>
+        <datalist id="countries">
+            <option value="Finland"></option>
+            <option value="United States"></option>
+            <option value="Australia"></option>
+            <option value="New Zealand"></option>
+        </datalist>
+        <br>
+        Sightseeing : <input type="text" list="what"><br>
+        <datalist id="what">
+            <option value="Cities"></option>
+            <option value="Beaches"></option>
+            <option value="Mountains"></option>
+        </datalist>
+    </form>
+</body>
+</html>
