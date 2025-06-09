@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating Selectors</title>
+<style>
+h3, li { /* Tag name selector */
+  color: brown;
+}
+div > div > strong { /* Child selector */
+  background: yellow;
+}
+ul strong { /* Descendant selector */
+  color: dodgerblue;
+}
+.warning { /* Class selector */
+  color: red;
+}
+body.main { /* Class selector */
+  background: aliceblue;
+}
+#list { /* ID selector */
+  background: mistyrose;
+}
+#list span { /* Descendant selector */
+  color: forestgreen;
+}
+h3:first-letter { /* Pseudo-class selector */
+  color: red;
+}
+li:hover { /* Pseudo-class selector */
+  background: yellowgreen;
+}
+</style>
+</head>
+<body class="main">
+<h3>Web Programming</h3>
+<hr>
+<div>
+  <div>2nd Semester <strong>Course Content</strong>.</div>
+  <ul id="list">
+    <li><span>HTML5</span></li>
+    <li><strong>CSS</strong></li>
+    <li>JAVASCRIPT</li>
+  </ul>
+  <div class="warning">Scores below 60 are F</div>
+</div>
+</body>
+</html>
