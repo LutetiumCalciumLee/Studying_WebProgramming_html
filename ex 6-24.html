@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Function</title>
+<script>
+function multiplicationTable(n) { // Define function
+    let m = parseInt(n); // Convert string n to a number
+    if(isNaN(m) || m < 1 || m > 9) {
+        alert("Invalid input.");
+        return;
+    }
+    for(let i = 1; i <= 9; i++) { // Repeat i from 1 to 9
+        document.write(m + " x " + i + " = " + (m * i) + "<br>");
+    }
+}
+</script>
+</head>
+<body>
+<h3>Create Multiplication Table Function</h3>
+<hr>
+<script>
+    let n = prompt("Which multiplication table do you want?", ""); // n is a string
+    multiplicationTable(n); // Call function
+</script>
+</body>
+</html>

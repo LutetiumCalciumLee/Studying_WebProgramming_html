@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Bitwise operation</title>
+    <script>
+        function digit8(v) { // Convert the number v to an 8-bit binary number.
+            let str = "" ;
+            for (let i = 0 ; i < 8 ; i ++ , v <<= 1) {
+                if((v & 0x80)) str += "1" ;
+                else str += "0" ;
+            }
+            return str ;
+        }
+    </script>
+ </head>
+ <body>
+ <h3>Bitwise logic and shift operations</h3>
+ <hr>
+ <script>
+    let x = 10 , y = 3 ;
+    document.write("<pre>") ;
+    document.write("x = " + x + ", y = " + y + "<br>") ; // Print values of x and y
+    document.write("x :        " + digit8(x) + "<br>") ; // Print value of x
+    document.write("y :        " + digit8(y) + "<br>") ; // Print value of y
+    document.write("<hr>");
+    document.write("x & y  :   " + digit8(x & y) + "<br>") ;
+    document.write("x | y  :   " + digit8(x | y) + "<br>") ;
+    document.write("x ^ y  :   " + digit8(x ^ y) + "<br>") ;
+    document.write("~x     :   " + digit8(~x) + "<br>") ;
+    document.write("<hr>") ;
+    document.write("x << 1 :   " + digit8(x << 1) + " (" + (x << 1) + ")<br>") ;
+    document.write("x >> 1 :   " + digit8(x >> 1) + " (" + (x >> 1) + ")<br>") ;
+    document.write("x >>> 1:   " + digit8(x >>> 1) + " (" + (x >>> 1) + ")") ;
+    document.write("</pre>") ;
+ </script>
+ </body>
+ </html>
