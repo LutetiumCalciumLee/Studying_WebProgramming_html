@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating a Menu with a List</title>
+<style>
+#menubar {
+  background: olive;
+}
+#menubar ul { /* Both margin and padding set to 0 */
+  margin: 0;
+  padding: 0;
+  width: 567px; /* Width to fit all <li> items in one row */
+}
+#menubar ul li {
+  display: inline-block; /* Prevent line breaks */
+  list-style-type: none; /* Remove list markers */
+  padding: 0px 15px; /* top=bottom=0, left=right=15px */
+}
+#menubar ul li a {
+  color: white;
+  text-decoration: none; /* Hide link underline */
+}
+#menubar ul li a:hover {
+  color: violet;  /* Color when mouse hovers */
+}
+</style>
+</head>
+<body>
+<nav id="menubar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Espresso</a></li>
+    <li><a href="#">Cappuccino</a></li>
+    <li><a href="#">Cafe Latte</a></li>
+    <li><a href="#">F.A.Q</a></li>
+  </ul>
+</nav>
+</body>
+</html>

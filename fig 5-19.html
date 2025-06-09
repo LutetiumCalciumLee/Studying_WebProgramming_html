@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table</title>
+<style>
+table { /* Remove double borders */
+  border-collapse: collapse;
+}
+td, th { /* Apply to all cells */
+  text-align: left;
+  padding: 10px;
+  height: 20px;
+  width: 100px;
+}
+thead { /* Apply to all cells in <thead> */
+  background: darkgray;
+  color: yellow;
+}
+td, tfoot th { /* Only bottom border in gray */
+  border-bottom: 1px solid gray;
+}
+</style>
+</head>
+<body>
+<h3>First Semester Grades</h3>
+<hr>
+<table>
+  <thead>
+    <tr><th>Name</th><th>HTML</th><th>CSS</th></tr>
+  </thead>
+  <tfoot>
+    <tr><th>Total</th><th>175</th><th>169</th></tr>
+  </tfoot>
+  <tbody>
+    <tr><td>Jane Doe</td><td>80</td><td>70</td></tr>
+    <tr><td>John Doe</td><td>95</td><td>99</td></tr>
+  </tbody>
+</table>
+</body>
+</html>

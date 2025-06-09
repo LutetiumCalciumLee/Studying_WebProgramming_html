@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow Property</title>
+<style>
+p {
+  width: 15em;
+  height: 3em;
+  border: 1px solid lightgray;
+}
+.hidden { overflow: hidden; }
+.visible { overflow: visible; }
+.scroll { overflow: scroll; }
+</style>
+</head>
+<body>
+<h3>overflow Property</h3>
+<hr>
+<p class="hidden">
+  When the overflow property is set to hidden, content that exceeds the box is cut off and not visible.
+</p><br>
+<p class="visible">
+  When the overflow property is set to visible, content that exceeds the box is still displayed.
+</p><br>
+<p class="scroll">
+  When the overflow property is set to scroll, scrollbars are added to the box for overflow content.
+</p>
+</body>
+</html>
