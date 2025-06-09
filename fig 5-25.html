@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animation</title>
+<style>
+@keyframes textColorAnimation {
+  0% { color: blue; }
+  30% { color: green; }
+  100% { color: red; }
+}
+span {
+  font-family: "arial black";
+  animation-name: textColorAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+</style>
+</head>
+<body>
+<!--  <h3>Text Color Animation</h3>
+<hr> -->
+<p>
+  The <span>span</span> text cycles through blue, green, and red every 5 seconds infinitely.
+</p>
+</body>
+</html>

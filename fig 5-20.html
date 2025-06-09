@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table</title>
+<style>
+table { /* Remove double borders */
+  border-collapse: collapse;
+}
+td, th { /* Apply to all cells */
+  text-align: left;
+  padding: 5px;
+  height: 15px;
+  width: 100px;
+}
+thead, tfoot { /* Apply to all cells in <thead> and <tfoot> */
+  background: darkgray;
+  color: yellow;
+}
+tbody tr:nth-child(even) { /* Apply to even <tr> */
+  background: aliceblue;
+}
+</style>
+</head>
+<body>
+<h3>First Semester Grades</h3>
+<hr>
+<table>
+  <thead>
+    <tr><th>Name</th><th>HTML</th><th>CSS</th></tr>
+  </thead>
+  <tfoot>
+    <tr><th>Total</th><th>310</th><th>249</th></tr>
+  </tfoot>
+  <tbody>
+    <tr><td>Jane Doe</td><td>80</td><td>70</td></tr>
+    <tr><td>John Doe</td><td>95</td><td>99</td></tr>
+    <tr><td>Jane Smith</td><td>85</td><td>90</td></tr>
+    <tr><td>John Smith</td><td>50</td><td>40</td></tr>
+  </tbody>
+</table>
+</body>
+</html>
