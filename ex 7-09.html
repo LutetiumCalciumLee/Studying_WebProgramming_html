@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating a User Object with new Object()</title>
+<script>
+	// Define three functions to be used as methods
+	function inquiry() { return this.balance; } // Check balance
+	function deposit(money) { this.balance += money; } // Deposit the given amount
+	function withdraw(money) { // Withdraw the given amount (assuming money < balance)
+		this.balance -= money; 
+		return money;
+	} 
+	
+	// Create a user object
+	let account  = new Object(); 
+	account.owner = "Lee JaeHyuk"; // Create and initialize owner property
+	account.code = "111"; // Create and initialize code property
+	account.balance = 35000; // Create and initialize balance property
+	account.inquiry = inquiry; // Assign method
+	account.deposit = deposit; // Assign method
+	account.withdraw = withdraw; // Assign method
+</script>
+</head>
+<body>
+<h3>Creating a User Object with new Object()</h3>
+<hr>
+<script>
+	// Using the object
+	document.write("account: ");
+	document.write(account.owner + ", ");
+	document.write(account.code + ", ");
+	document.write(account.balance + "<br>");
+	
+	account.deposit(10000); // Deposit 10,000
+	document.write("After depositing 10,000, balance is " + account.inquiry() + "<br>");
+	account.withdraw(5000); // Withdraw 5,000
+	document.write("After withdrawing 5,000, balance is " + account.inquiry() + "<br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using Array Object Methods</title>
+<script>
+function pr(msg, arr) {
+	document.write(msg + arr.toString() + "<br>");
+}
+</script>
+</head>
+<body>
+<h3>Using Array Object Methods</h3>
+<hr>
+<script>
+	let a = new Array("Hwang", "Kim", "Lee");
+	let b = new Array("Park");
+	let c;
+
+	pr("Array a = ", a);
+	pr("Array b = ", b);
+	document.write("<hr>");
+
+	c = a.concat(b); // c is a new array combining a and b
+	pr("After c = a.concat(b), c = ", c);
+	pr("After c = a.concat(b), a = ", a);
+
+	c = a.join("##"); // c is a string joining elements of a
+	pr("After c = a.join(), c = ", c);
+	pr("After c = a.join(), a = ", a);
+
+	c = a.reverse(); // a.reverse() changes a itself. c is the array
+	pr("After c = a.reverse(), c = ", c); 
+	pr("After c = a.reverse(), a = ", a);
+
+	c = a.slice(1, 2); // c is a new array
+	pr("After c = a.slice(1, 2), c = ", c);
+	pr("After c = a.slice(1, 2), a = ", a);
+
+	c = a.sort(); // a.sort() changes a itself. c is the array
+	pr("After c = a.sort(), c = ", c);
+	pr("After c = a.sort(), a = ", a);
+
+	c = a.toString(); // toString() creates a string with "," between elements
+	document.write("a.toString(): " + c);
+</script>
+</body>
+</html>

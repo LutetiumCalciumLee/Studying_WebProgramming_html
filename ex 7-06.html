@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Background Color Changes by Visit Second</title>
+</head>
+<body>
+<h3>If the seconds at page visit are even, the background is violet; if odd, lightskyblue</h3>
+<hr>
+<script>
+	let current = new Date(); // Create a Date object with the current time
+	if(current.getSeconds() % 2 == 0)
+		document.body.style.backgroundColor = "violet";
+	else
+		document.body.style.backgroundColor = "lightskyblue";
+
+	document.write("Current time: ");
+	document.write(current.getHours(), " hour, ");
+	document.write(current.getMinutes(), " minute, ");
+	document.write(current.getSeconds(), " second<br>");
+</script>
+</body>
+</html>

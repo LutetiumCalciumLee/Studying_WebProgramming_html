@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating an Object with a Prototype</title>
+<script>
+	// Create a prototype: define a constructor function
+	function Account(owner, code, balance) {
+		// Create properties
+		this.owner = owner;      // Create owner property
+		this.code = code;        // Create code property
+		this.balance = balance;  // Create balance property
+		
+		// Create methods
+		this.inquiry = function () { return this.balance; }
+		this.deposit = function (money) { this.balance += money; } 
+		this.withdraw = function (money) { // Withdraw money (assume money < balance)
+			this.balance -= money; 
+			return money;
+		} 
+	}
+</script>
+</head>
+<body>
+<h3>Creating an Account Prototype</h3>
+<hr>
+<script>
+	// Create an account object using the new operator
+	let account = new Account("Lee JaeHyuk", "111", 35000);
+
+	// Using the object
+	document.write("account: ");
+	document.write(account.owner + ", ");
+	document.write(account.code + ", ");
+	document.write(account.balance + "<br>");
+
+	account.deposit(10000); // Deposit 10,000
+	document.write("After depositing 10,000, balance is " + account.inquiry() + "<br>");
+	account.withdraw(5000); // Withdraw 5,000
+	document.write("After withdrawing 5,000, balance is " + account.inquiry() + "<br>");
+</script>
+</body>
+</html>

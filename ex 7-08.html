@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Multiplication Table Practice Using Math</title>
+<script>
+function randomInt() { // Returns a random integer from 1 to 9
+	return Math.floor(Math.random() * 9) + 1; 
+}
+</script>
+</head>
+<body>
+<h3>Multiplication Table Practice Using Math</h3>
+<hr>
+<script>
+	// Generate a multiplication question
+	let ques = randomInt() + "*" + randomInt();
+	// Get user's answer
+	let user = prompt("What is the value of " + ques + "?", 0);
+	if(user == null) { // If the Cancel button is clicked
+		document.write("Ending multiplication table practice.");
+	}
+	else {
+		let ans = eval(ques); // Calculate the correct answer
+		if(ans == user) // Compare the correct answer and user input
+			document.write("Correct! ");
+		else 
+			document.write("Incorrect! ");	
+		document.write(ques + " = <strong>" + ans + "</strong><br>");
+	}
+</script>
+</body>
+</html>

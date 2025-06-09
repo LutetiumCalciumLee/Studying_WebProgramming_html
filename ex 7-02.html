@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating Arrays with []</title>
+</head>
+<body>
+<h3>Creating Arrays with []</h3>
+<hr>
+<script>
+	let plots = [20, 5, 8, 15, 20]; // Create an array with 5 elements
+	document.write("var plots = [20, 5, 8, 15, 20]<br>");
+
+	for(let i=0; i<5; i++) { // You can use plots.length instead of 5
+		let size = plots[i]; // The i-th element of the plots array
+		while(size>0) {
+			document.write("*");
+			size--;
+		}
+		document.write(plots[i] + "<br>");
+	}
+</script>
+</body>
+</html>
