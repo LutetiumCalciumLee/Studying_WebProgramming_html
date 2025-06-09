@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Getting the Current Time with the Date Object</title>
+</head>
+<body>
+<h3>Getting the Current Time with the Date Object</h3>
+<hr>
+<script>
+	let now = new Date(); // Create a Date object with the current time
+	document.write("Year: " + now.getFullYear() + "<br>");
+    document.write("Month: " + (now.getMonth() + 1) + "<br>");
+    document.write("Day: " + now.getDate() + "<br>");
+    document.write("Hour: " + now.getHours() + "<br>");
+    document.write("Minute: " + now.getMinutes() + "<br>");
+    document.write("Second: " + now.getSeconds() + "<br>");
+    document.write("Millisecond: " + now.getMilliseconds() + "<br><hr>");
+
+	let next = new Date(2023, 7, 15, 12, 12, 12); // 7 means August
+	document.write("next.toLocaleString(): "
+				+ next.toLocaleString() + "<br>");
+</script>
+</body>
+</html>

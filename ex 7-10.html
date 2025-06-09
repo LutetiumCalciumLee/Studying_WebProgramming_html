@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating an Object with Literal Notation</title>
+<script>
+	// Create a user object
+	let account = {
+		// Create and initialize properties
+		owner : "Lee JaeHyuk", // Account owner
+		code : "111", // Account code
+		balance : 35000, // Balance property
+
+		// Define methods
+		inquiry : function () { return this.balance; }, // Check balance
+		deposit : function(money) { this.balance += money; }, // Deposit the given amount
+		withdraw : function (money) { // Withdraw the given amount (assume money < balance)
+			this.balance -= money; 
+			return money;
+		} 
+	};
+</script>
+</head>
+<body>
+<h3>Creating a User Object with Literal Notation</h3>
+<hr>
+<script>
+	document.write("account: ");
+	document.write(account.owner + ", ");
+	document.write(account.code + ", ");
+	document.write(account.balance + "<br>");
+	
+	account.deposit(10000); // Deposit 10,000
+	document.write("After depositing 10,000, balance is " + account.inquiry() + "<br>");
+	account.withdraw(5000); // Withdraw 5,000
+	document.write("After withdrawing 5,000, balance is " + account.inquiry() + "<br>");
+</script>
+</body>
+</html>
