@@ -1,14 +1,6 @@
 # Chapter 1 . Web Basics
 
 
-**Main Concepts Covered:**
-- Understanding the basic concepts and structure of the web
-- The relationship between web servers and web browsers
-- Differences between web documents and traditional electronic documents
-- The three core components of web pages: HTML, CSS, and JavaScript
-- The purpose and features of HTML5
-- The process and tools for creating web pages with HTML5
-
 **Key Points:**
 
 - **Purpose and Structure of the Web**  
