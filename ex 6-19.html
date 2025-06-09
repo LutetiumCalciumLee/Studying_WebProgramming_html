@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>do-while Statement</title>
+</head>
+<body>
+<h3>Sum from 0 to n with do-while Statement</h3>
+<hr>
+<script>
+  let n = prompt("Enter an integer greater than 0", 0);
+  n = parseInt(n); // Convert string n to a number
+
+  let i = 0, sum = 0;
+  do { 
+    sum += i;
+    i++;
+  } while(i <= n); // Repeat from i = 0 to n
+  document.write("The sum from 0 to " + n + " is " + sum + ".");
+</script>
+</body>
+</html>

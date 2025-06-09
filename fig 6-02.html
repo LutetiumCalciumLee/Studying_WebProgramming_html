@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript User Input and Dialogs</title>
+</head>
+<body>
+<h3>User Input and Dialogs with JavaScript</h3>
+<hr>
+<div id="result"></div>
+<script>
+let result = document.getElementById("result");
+
+function promptEX() {
+    let ret = prompt("Please enter your name", "John Doe");
+    if(ret == null) { 
+           // If Cancel button is pressed or dialog is closed
+           result.innerHTML = "You cancelled or closed the dialog";
+        }
+    else {
+          // ret contains the string entered by the user
+          // If no input, ret = ""
+           result.innerHTML = ret;          
+    }
+}
+function confirmEX() {
+    let ret = confirm("Shall we send?");
+    if(ret == true) {
+          // User pressed "OK"
+           result.innerHTML = "You pressed OK";          
+    }
+    else {
+          // Cancel button pressed or dialog closed
+           result.innerHTML = "You cancelled or closed the dialog";          
+    }
+}
+function alertEX() {
+    alert("You clicked.");
+}
+</script>
+<button onclick="promptEX()">Prompt Dialog</button>
+<button onclick="confirmEX()">Confirm Dialog</button>
+<button onclick="alertEX()">Alert Dialog</button>
+</body>
+</html>

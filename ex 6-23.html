@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Global Functions</title>
+<script>
+function evalParseIntIsNaN() {
+    let res = eval("2*3+4*6"); // res is 30
+    document.write("eval(\"2*3+4*6\") is " + res + "<br>");
+    let m = parseInt("32");
+    document.write("parseInt(\"32\") is " + m + "<br>");
+    let n = parseInt("0x32");
+    document.write("parseInt(\"0x32\") is " + n + "<br><br>");
+
+    // "hello" cannot be converted to an integer, so parseInt("hello") returns NaN
+    n = parseInt("hello");
+    if(isNaN(n)) // true
+        document.write("hello is not a number.");
+}
+</script>
+</head>
+<body>
+<h3>eval(), parseInt(), isNaN()</h3>
+<hr>
+<script>
+    evalParseIntIsNaN();
+</script>
+</body>
+</html>

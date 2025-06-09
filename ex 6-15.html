@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>if-else</title>
+</head>
+<body>
+<h3>Grading Using if-else Statements</h3>
+<hr>
+<script>
+	let grade;
+	let score = prompt("Please enter your score, Luke Lee", 100);
+	score = parseInt(score); // Convert the string to a number
+	if(score >= 90) // score is 90 or above
+		grade = "A";
+	else if(score >= 80) // 80 or above but less than 90
+		grade = "B";
+	else if(score >= 70) // 70 or above but less than 80
+		grade = "C";
+	else if(score >= 60) // 60 or above but less than 70
+		grade = "D";
+	else // less than 60
+		grade = "F";
+	document.write(score + " is a grade of " + grade + ".<br>");
+</script>
+</body>
+</html>

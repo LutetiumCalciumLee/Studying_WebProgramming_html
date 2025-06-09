@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variable declaration</title>
+</head>
+<body>
+<h3>Variable declaration, global/local/block variable</h3>
+<hr>
+<script>
+    let x ; // Declare a gloval veriable x. Declaring it with var has the same effect.
+    function f() {
+        let y ; // Declare a local variable y that is used only inside the function f(). Declaring it with var has the same effect.
+        x = 10 ; // Store 10 in the global variable x.
+        y = 20 ; // Store 20 in the local variable y.
+        z = 30 ; // Declare a new global variable z and assign 30 to it.
+        if(y == 20) {
+            let b = 40 ; // Declare a block variable b that is used only within the if block.
+            b++ ;
+            document.write("Block variable b inside the if block =" + b + "<br>") ;
+        }
+        // The block variable b is not accessible here.
+        // All variables x, y, and z are accessible here.
+        document.write("Local variable y in function f() = " + y + "<br>") ;
+    }
+
+f(); // Call function f()
+document.write("Global variable x = " + x + "<br>");
+document.write("Global variable z = " + z);
+// Only variables x and z are accessible here; the local variable y and the block variable b are not accessible.
+</script>
+</body>
+</html>

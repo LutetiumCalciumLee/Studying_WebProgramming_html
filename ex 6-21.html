@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>continue Statement</title>
+</head>
+<body>
+<h3>Add Only Numbers with Remainder 1 When Divided by 3</h3>
+<hr>
+<script>
+  let sum = 0;
+  for(let i = 1; i <= 10; i++) {
+    if(i % 3 != 1) // If the remainder when divided by 3 is not 1
+      continue;    // Jump to the next iteration (i++)
+    document.write(i + " "); // Output the number being added
+    sum += i; // Add to sum
+  }
+  document.write("The sum is " + sum);
+</script>
+</body>
+</html>
