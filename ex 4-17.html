@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating Image Borders</title>
+<style>
+p {
+    background: yellow;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    border: 20px solid lightgray; /* border-width and border-style specified together */
+}
+#round { border-image: url("border.png") 30 round; }
+#repeat { border-image: url("border.png") 30 repeat; }
+#stretch { border-image: url("border.png") 30 stretch; }
+</style>
+</head>
+<body>
+<h3>Creating Image Borders</h3>
+<hr>
+The following is the original image.<br>
+<img src="border.png" alt="Original">
+<hr>
+<p>p tag with a 20x20 size gray border</p>
+<p id="round">round style image border</p>
+<p id="repeat">repeat style image border</p>
+<p id="stretch">stretch style image border</p>
+</body>
+</html>

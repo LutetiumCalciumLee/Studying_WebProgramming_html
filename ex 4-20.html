@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating Box Shadows on div</title>
+<style>
+.redBox {
+	box-shadow: 10px 10px red;
+}
+.blurBox {
+	box-shadow: 10px 10px 5px skyBlue;
+}
+.multiEffect {
+	box-shadow: 2px 2px 2px black,
+	            0 0 25px blue,
+	            0 0 5px darkblue;
+}
+div {
+	width: 150px;
+	height: 70px;
+    padding: 10px;
+    border: 10px solid lightgray;
+    background-image: url("media/spongebob.png");
+    background-size: 150px 100px;
+    background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+<h3>Creating Box Shadows</h3>
+<hr>
+<div class="redBox">With Patrick</div><br>
+<div class="blurBox">With Patrick</div><br>
+<div class="multiEffect">With Patrick</div>
+</body>
+</html>
