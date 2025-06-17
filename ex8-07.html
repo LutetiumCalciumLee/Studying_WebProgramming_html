@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>document.getElementsByClassName()</title>
+<script>
+function viewPlace() {
+	let tagArray = document.getElementsByClassName("place");
+ 	for(let i = 0; i < tagArray.length; i++) {
+		let tag = tagArray[i];
+		tag.style.color = "orchid";
+		tag.style.fontSize = "20px";
+		tag.style.textDecoration = "underline";
+ 	}
+}
+function viewFood() {
+	let tagArray = document.getElementsByClassName("food");
+ 	for(let i = 0; i < tagArray.length; i++) {
+		let tag = tagArray[i];
+		tag.style.color = "darkcyan";
+ 	}
+}
+</script>
+</head>
+<body>
+<h3>Places I Want to Visit & Foods I Want to Eat</h3><br>
+	<button onclick="viewPlace()">Places I Want to Visit</button>
+	<button onclick="viewFood()">Foods I Want to Eat</button>
+<hr>
+<p>
+I want to go to <span class="place">Jeju Island</span> and eat <span class="food">black pork</span>.<br>
+I also want to visit <span class="place">Dokdo</span> and try <span class="food">Dokdo shrimp</span>.<br>
+The place I want to visit the most is <span class="place">Busan Jagalchi Market</span>, where I want to eat <span class="food">grilled hagfish</span>.
+</p>
+</body>
+</html>

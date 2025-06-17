@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head id="myHead">
+<meta charset="UTF-8">
+<title>Main Properties of the document Object</title>
+<script>
+	let text = "While the document is loading, readyState = " + document.readyState + "\n";
+</script>
+</head>
+<body style="background-color:yellow; color:blue; direction:rtl"
+      onload="printProperties()">
+<h3>Main Properties of document</h3>
+<hr>
+<a href="http://www.naver.com">Naver Homepage</a>
+<div>This is the div area.</div>
+<input id="input" type="text" value="This input is focused">
+
+<script>
+// When the document is fully loaded (rendered), output the current properties of document
+function printProperties() {  
+	document.getElementById("input").focus(); // Set focus to the <input> tag
+	
+	text += "1. location = " + document.location + "\n";
+	text += "2. URL = " + document.URL + "\n";
+	text += "3. title = " + document.title + "\n";
+	text += "4. id of head = " + document.head.id + "\n";
+	text += "5. body color = " + document.body.style.color + "\n";
+	text += "6. domain = " + document.domain + "\n";		
+	text += "7. lastModified = " + document.lastModified + "\n";
+	text += "8. defaultView = " + document.defaultView + "\n";		
+	text += "9. readyState after document is fully loaded = " + document.readyState + "\n";
+	text += "10. referrer = " + document.referrer + "\n";
+	text += "11. activeElement = " + document.activeElement.value + "\n";		
+	text += "12. tag name of documentElement = " + document.documentElement.tagName + "\n";
+	alert(text);
+}
+</script>
+
+</body>
+</html>

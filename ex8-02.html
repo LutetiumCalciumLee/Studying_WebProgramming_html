@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dynamic CSS Style Change</title>
+<script>
+function change() {
+	let span = document.getElementById("mySpan"); // Find the object with id "mySpan"
+	span.style.color = "green"; // Set text color to green
+	span.style.fontSize = "30px"; // Set font size to 30 pixels
+	span.style.display = "block"; // Change to block box
+	span.style.width = "6em"; // Set box width to 6 character units
+	span.style.border = "3px dotted magenta"; // 3px dotted magenta border
+	span.style.margin = "20px"; // 20px margin on all sides
+}
+</script>
+</head>
+<body>
+<h3>Dynamic CSS Style Change</h3>
+<hr>
+<p style="color:blue">This is 
+    <span id="mySpan" style="color:red">a sentence.</span>
+</p>
+<input type="button" value="Change Style" onclick="change()">
+</body>
+</html>
