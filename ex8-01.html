@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML DOM Tree</title>
+</head>
+<body>
+<h3>Properties, Styles, and Event Listeners of the DOM Object p</h3>
+<hr>
+<p id="firstP" style="color:blue; background:yellow" 
+	onclick="this.style.color='teal'">This is a
+	<span style="color:red">sentence.</span>
+</p>
+<script>
+	let p = document.getElementById("firstP");
+	let text = "p.id = " + p.id + "\n";
+	text += "p.tagName = " + p.tagName + "\n";
+	text += "p.innerHTML = " + p.innerHTML + "\n";
+	text += "p.style.color = " + p.style.color + "\n";
+	text += "p.onclick = " + p.onclick + "\n";
+	text += "p.childElementCount = " + p.childElementCount + "\n";
+	text += "Width = " + p.offsetWidth + "\n";
+	text += "Height = " + p.offsetHeight + "\n";
+	alert(text);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using this</title>
+<script>
+function change(obj, size, color) {
+	obj.style.color = color;
+	obj.style.fontSize = size;
+}
+</script>
+</head>
+<body>
+<h3>Using this</h3>
+<hr>
+<button onclick="change(this, '30px', 'red')">Button</button>
+<button onclick="change(this, '30px', 'blue')">Button</button>
+<div onclick="change(this, '25px', 'orange')">
+   Click here to change size and color
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using innerHTML</title>
+<script>
+function change() {
+	let p = document.getElementById("firstP");
+	p.innerHTML = "My <img src='media/puppy.png'> puppy";
+}
+</script>
+</head>
+<body>
+<h3>Using innerHTML: Click the text below to see a cute puppy.</h3>
+<hr>
+<p id="firstP" style="color:blue"
+	onclick="change()">Click
+	<span style="color:red">here</span>
+</p>
+</body>
+</html>

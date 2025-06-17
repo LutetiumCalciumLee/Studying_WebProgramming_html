@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dynamic Document Structure</title>
+<script>
+function createDIV() {
+	let obj = document.getElementById("parent");
+	let newDIV = document.createElement("div");
+	newDIV.innerHTML = "This is a newly created DIV.";
+	newDIV.setAttribute("id", "myDiv");
+	newDIV.style.backgroundColor = "yellow";
+	newDIV.onclick = function() {
+		let p = this.parentElement; // Parent HTML element
+		p.removeChild(this); // Remove itself from the parent
+	};
+	obj.appendChild(newDIV);
+}
+</script>
+</head>
+<body id="parent">
+<h3>Example of Dynamically Creating, Inserting, and Deleting DIV Objects</h3>
+<hr>
+<p>You can dynamically insert objects into the DOM tree.
+This is an example of creating, inserting, and deleting new objects
+using the createElement(), appendChild(), and removeChild() methods.</p>
+<a href="javascript:createDIV()">Create DIV</a><p>
+<p>
+</body>
+</html>

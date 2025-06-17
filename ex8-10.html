@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create an HTML Document Writer</title>
+<script>
+let win = null;
+function showHTML() {
+	if (win == null || win.closed)
+		win = window.open("", "outWin", "width=250,height=150");
+
+	let textArea = document.getElementById("srcText");
+	win.document.open();
+	win.document.write(textArea.value);
+	win.document.close();
+}
+</script>
+</head>
+<body>
+<h3>Create an HTML Document Writer</h3>
+<hr>
+<p>Write an HTML document below and click the button.
+The HTML document will be displayed in a new window.</p>
+<textarea id="srcText" rows="10" cols="40"></textarea>
+<br>
+<br>
+<button onclick="showHTML()">Display HTML Document</button>
+</body>
+</html>
