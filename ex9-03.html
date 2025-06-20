@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registering Listeners Using addEventListener()</title>
+<script>
+let p;
+function init() { // Called when the document is fully loaded
+    p = document.getElementById("p");    
+    p.addEventListener("mouseover", over); // Register event listener
+    p.addEventListener("mouseout", out);   // Register event listener    
+}
+function over() {
+    p.style.backgroundColor = "orchid";
+}
+function out() {
+    p.style.backgroundColor = "white";
+}
+</script>
+</head>
+<body onload="init()">
+<h3>Registering Listeners Using addEventListener()</h3>
+<hr>
+<p id="p">Change to orchid color when mouse is over</p>
+</body>
+</html>

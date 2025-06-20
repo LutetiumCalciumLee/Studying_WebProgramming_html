@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculate Selected Items</title>
+<script>
+let sum = 0;
+function calc(cBox) {
+    if(cBox.checked)
+        sum += parseInt(cBox.value);
+    else
+        sum -= parseInt(cBox.value);
+    document.getElementById("sumtext").value = sum;
+}
+</script>
+</head>
+<body>
+<h3>The amount will be automatically calculated when you select items</h3>
+<hr>
+<form>
+    <input type="checkbox" name="hat" value="10000"
+        onclick="calc(this)">Hat 10,000 won
+    <input type="checkbox" name="shoes" value="30000"
+        onclick="calc(this)">Shoes 30,000 won
+    <input type="checkbox" name="bag" value="80000"
+        onclick="calc(this)">Luxury Bag 80,000 won<br>
+    Amount to pay <input type="text" id="sumtext" value="0">
+</form>
+</body>
+</html>

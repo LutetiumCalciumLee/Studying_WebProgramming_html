@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Loading Images with new Image()</title>
+<script>
+// Array of 8 image file names to preload
+let files = ["Penguins.png", 
+             "Lighthouse.png",
+             "Chrysanthemum.png",
+             "Desert.png",
+             "Hydrangeas.png",
+             "Jellyfish.png",
+             "Koala.png",
+             "Tulips.png"];
+let imgs = new Array(); // Array to store image objects
+for(let i = 0; i < files.length; i++) {
+    imgs[i] = new Image(); // Create image object
+    imgs[i].src = files[i]; // Start loading image
+}
+
+let next = 1;
+function change(img) { // Display next image
+    img.src = imgs[next].src; // Change image
+    next++; // Move to next image index
+    next %= imgs.length; // Loop back to first image if at the end
+}
+</script>
+</head>
+<body>
+<h3>Loading Images with new Image()</h3>
+<hr>
+Click the image to display the next one.<p>
+<img style="border:20px ridge wheat" 
+    src="Penguins.png" alt="."
+    width="200" height="200" 
+    onclick="change(this)">
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display Selected Fruit from select Object</title>
+<script>
+function drawImage() {
+    let sel = document.getElementById("fruits");
+    let img = document.getElementById("fruitimage");
+    img.src = sel.options[sel.selectedIndex].value;
+}
+</script>
+</head>
+<body onload="drawImage()">
+<h3>Display Selected Fruit from select Object</h3>
+<hr>
+When you select a fruit, its image will be displayed.<p>
+<form>
+<select id="fruits" onchange="drawImage()">
+    <option value="strawberry.png">Strawberry
+    <option value="banana.png" selected>Banana
+    <option value="apple.png">Apple
+</select>
+<img id="fruitimage" src="banana.gif" alt="">
+</form>
+</body>
+</html>

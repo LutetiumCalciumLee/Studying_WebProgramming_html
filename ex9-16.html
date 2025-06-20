@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>onfocus and onblur</title>
+<script>
+function checkFilled(obj) {
+    if(obj.value == "") { // If nothing is entered in obj
+        obj.focus(); // Focus back to obj
+    }
+}
+</script>
+</head>
+<body onload="document.getElementById('name').focus();">
+<h3>onfocus and onblur</h3>
+<hr>
+<p>You cannot move to another field without entering your name.</p>
+<form>
+Name <input type="text" id="name"
+            onblur="checkFilled(this)"><p>
+Student ID <input type="text">
+</form>
+</body>
+</html>

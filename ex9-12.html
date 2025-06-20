@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>oncontextmenu</title>
+<script>
+function hideMenu() {
+    alert("Right-click <context menu> is disabled");
+    return false;
+}
+document.oncontextmenu = hideMenu;
+</script>
+</head>
+<body>
+<h3>Disabling the Context Menu with oncontextmenu</h3>
+<hr>
+Right-clicking is disabled. No matter where you click,
+the context menu will not appear.<br>
+<img src="beach2.png" alt="miami">
+</body>
+</html>

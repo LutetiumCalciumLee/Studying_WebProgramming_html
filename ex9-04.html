@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Writing Event Listeners with Anonymous Functions</title>
+<script>
+let p;
+function init() { // Called when the document is fully loaded
+    p = document.getElementById("p");    
+    p.onmouseover = function () { // Anonymous function
+        this.style.backgroundColor = "orchid";
+    }; 
+    p.addEventListener("mouseout", 
+        function () { this.style.backgroundColor = "white"; } // Anonymous function
+    );
+}
+</script>
+</head>
+<body onload="init()">
+<h3>Writing Event Listeners with Anonymous Functions</h3>
+<hr>
+<p id="p">Change to orchid color when mouse is over</p>
+</body>
+</html>

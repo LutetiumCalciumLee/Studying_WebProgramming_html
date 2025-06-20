@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Event Object Properties</title>
+</head>
+<body>
+<h3>Display Properties of the Event Object</h3>
+<hr>
+<p id="p">Click the button to display the event object properties.</p>
+<button onclick="f(event)">Click me</button>
+<script>
+function f(e) { // e is the event object of the current event
+    let text = "type : " + e.type + "<br>" 
+            + "target : " + e.target + "<br>"
+            + "currentTarge : " + e.currentTarget + "<br>"
+            + "defaultPrevented : " + e.defaultPrevented;
+            
+    let p = document.getElementById("p");        
+    p.innerHTML = text; // Display event object properties
+}
+</script>
+</body>
+</html>
