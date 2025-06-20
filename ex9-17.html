@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Find Selected Radio Button</title>
+<script>
+function findChecked() {
+    let found = null;
+    let kcity = document.getElementsByName("city");
+    for(let i = 0; i < kcity.length; i++) {
+        if(kcity[i].checked == true) 
+            found = kcity[i];
+    }
+    if(found != null) 
+        alert(found.value + " is selected");
+    else 
+        alert("Nothing is selected");        
+}
+</script>
+</head>
+<body>
+<h3>Click the button to display the value of the selected radio button.</h3>
+<hr>
+<form>
+    <input type="radio" name="city" value="seoul" checked>Seoul
+    <input type="radio" name="city" value="busan">Busan
+    <input type="radio" name="city" value="chunchen">Chuncheon
+    <input type="button" value="find checked" onclick="findChecked()">
+</form>
+</body>
+</html>

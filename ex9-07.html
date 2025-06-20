@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Canceling the Default Action of an Event</title>
+<script>
+function query() {
+    let ret = confirm("Do you want to move to Naver?");
+    return ret; // The return value of confirm() is true or false
+}
+
+function noAction(e) {
+    e.preventDefault(); // Force cancel the default action of the event
+}
+</script>
+</head>
+<body>
+<h3>Canceling the Default Action of an Event</h3>
+<hr>
+<a href="http://www.naver.com" 
+   onclick="return query()">
+   A link that asks if you want to move to Naver
+</a>
+<hr>    
+<form>
+    <input type="checkbox">Bread (checked)<br>
+    <input type="checkbox"
+        onclick="noAction(event)">Alcohol (cannot be checked)    
+</form>
+</body>
+</html>

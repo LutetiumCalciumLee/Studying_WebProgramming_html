@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Key Events</title>
+<script>
+function whatKeyDown(e) {
+    let str = "";
+    let div = document.getElementById("div");
+    div.innerHTML = ""; // Initialize the content of the div
+    str += "e.key = " + e.key + "<br>";
+    str += "e.code = " + e.code + "<br>";
+    div.innerHTML = str; // Display the HTML string in the div
+}
+</script>
+</head>
+<body>
+<h3>Key Listener and Properties of the Key Event Object</h3>
+<hr>
+Try pressing keys in the text box. Alt, Shift, and Ctrl keys are also supported.<br>
+<input type="text" id="text" onkeydown="whatKeyDown(event)">
+<div id="div" style="background-color:skyblue; width:250px; height:50px">
+</div>
+</body>
+</html>

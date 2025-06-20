@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Receiving the Event Object</title>
+</head>
+<body>
+<p id="p">Try hovering your mouse here</p>
+<button onclick="f(event)">Click me</button>
+<script>
+function f(e) { // e is the event object of the current event
+    alert(e.type); // Display the type of event
+}
+
+document.getElementById("p").onmouseover = f;
+</script>
+</body>
+</html>

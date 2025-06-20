@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Event Flow</title>
+</head>
+<body>
+<p style="color:blue">This is 
+    <span style="color:red" id="span">a sentence.
+    </span>
+</p>
+<form>
+    <input type="text" name="s">
+    <input type="button" value="Test" id="button">
+    <hr>
+</form>
+<div id="div" style="color:green"></div>
+<script>
+let div = document.getElementById("div"); // Area to display event messages
+let button = document.getElementById("button");
+
+// Register capture listener on the body object
+document.body.addEventListener("click", capture, true); // Capture phase (1)
+
+// Register bubble listener on the target object
+button.addEventListener("click", bubble, false); // Bubble phase (2)
+
+// Register bubble listener on the body object
+document.body.addEventListener("click", bubble, false); // Bubble phase (3)
+
+function capture(e) { // e is the event object
+    let obj = e.currentTarget; // The DOM object that received the current event
+    let tagName = obj.tagName; // Tag name
+    div.innerHTML += "<br>capture phase: " + tagName + " tag " + e.type + " event";
+}
+
+function bubble(e) { // e is the event object
+    let obj = e.currentTarget; // The DOM object that received the current event
+    let tagName = obj.tagName; // Tag name
+    div.innerHTML += "<br>bubble phase: " + tagName + " tag " + e.type + " event";
+}
+</script>
+</body>
+</html>

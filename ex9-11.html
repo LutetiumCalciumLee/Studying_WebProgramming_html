@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mouse Event Object Properties</title>
+<style>
+div {
+    background: skyblue;
+    width: 250px;
+}   
+</style>
+</head>
+<body>
+<h3>Properties of the Mouse Event Object and onmousemove</h3>
+<hr>
+When you move the mouse over the image, the onmousemove listener is executed and  
+shows the mouse position.<br><br>
+<img src="beach.png" onmousemove="where(event)"><br><br>
+<div id="div"></div>
+<script>
+let div = document.getElementById("div");
+function where(e) {
+    let text = "button=" + e.button + "<br>";
+    text += "(screenX, screenY)=" + e.screenX + "," + e.screenY + "<br>";
+    text += "(clientX, clientY)=" + e.clientX + "," + e.clientY + "<br>";
+    text += "(offsetX, offsetY)=" + e.offsetX + "," + e.offsetY + "<br>";
+    text += "(x, y)=" + e.x + "," + e.y + "\n";
+    div.innerHTML = text;
+}
+</script>
+</body>
+</html>

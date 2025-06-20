@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registering Functions to DOM Object Event Listener Properties</title>
+<script>
+let p;
+function init() { // Called when the document is fully loaded
+    p = document.getElementById("p");
+    p.onmouseover = over; // Register the over() function as the onmouseover listener
+    p.onmouseout = out;   // Register the out() function as the onmouseout listener
+}
+function over() {
+    p.style.backgroundColor = "orchid";
+}
+function out() {
+    p.style.backgroundColor = "white";
+}
+</script>
+</head>
+<body onload="init()">
+<h3>Registering Functions to DOM Object Event Listener Properties</h3>
+<hr>
+<p id="p">Change to orchid color when mouse is over</p>
+</body>
+</html>

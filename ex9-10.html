@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mouse-related Listeners</title>
+<script>
+let width = 1; // Border thickness
+function down(obj) {
+    obj.style.fontStyle = "italic";
+}
+function up(obj) {
+    obj.style.fontStyle = "normal";
+}
+function over(obj) {
+    obj.style.borderColor = "violet";
+    // The border color is not visible when the border width is 0.
+}
+function out(obj) {
+    obj.style.borderColor = "lightgray";
+}
+function wheel(e, obj) { // e is the event object
+    if (e.wheelDelta < 0) { // When the wheel is scrolled down
+        width--; // Decrease width by 1
+        if (width < 0) width = 0; // Prevent width from being less than 0
+    }
+    else // When the wheel is scrolled up
+        width++; // Increase width by 1
+    obj.style.borderStyle = "ridge";
+    obj.style.borderWidth = width + "px";
+}
+</script>
+</head>
+<body>
+<h3>Mouse-related Event Listeners</h3>
+<hr>
+<div>
+    Mouse-related 
+    <span onmousedown="down(this)"
+          onmouseup="up(this)"
+          onmouseover="over(this)"
+          onmouseout="out(this)"
+          onwheel="wheel(event, this)"
+          style="display:inline-block">events
+    </span> occur.
+</div>
+</body>
+</html>
