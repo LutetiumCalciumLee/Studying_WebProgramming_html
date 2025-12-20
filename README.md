@@ -3,8 +3,6 @@
 
 # Chapter 5. Advanced CSS3 Usage
 
-**Key Topics:**
-
 - **Element Layout and Positioning:**  
   CSS3 allows precise placement and control of elements using properties like `display`, `position` (static, relative, absolute, fixed), `float`, `z-index`, `visibility`, and `overflow`. Elements can be categorized as block, inline, or inline-block to manage stacking and content flow.
 
@@ -34,8 +32,6 @@
 <summary>KOR (한국어 버전)</summary>
 
 # 5장. 고급 CSS3 활용법
-
-**주요 내용:**
 
 - **요소 레이아웃과 위치 지정:**  
   CSS3는 `display`, `position`(static, relative, absolute, fixed), `float`, `z-index`, `visibility`, `overflow` 속성으로 요소의 위치와 배치 제어가 가능함. 블록, 인라인, 인라인-블록 박스 각각의 흐름과 겹침 관리가 가능함.
