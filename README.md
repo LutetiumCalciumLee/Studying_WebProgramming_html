@@ -3,8 +3,6 @@
 
 # Chapter 4. Styling Web Pages with CSS3
 
-**Key Points:**
-
 - **What is CSS3?**  
   CSS3 (Cascading Style Sheets Level 3) is the latest standard for describing the look and formatting of web documents. It enables customization of colors, fonts, spacing, borders, backgrounds, and visual effects.
 
@@ -45,8 +43,6 @@
 <summary>KOR (한국어 버전)</summary>
 
 # 4장. CSS3를 이용한 웹 페이지 스타일링
-
-**핵심 내용:**
 
 - **CSS3란?**  
   CSS3(Cascading Style Sheets Level 3)는 웹 문서의 외관과 서식을 설명하는 최신 표준임. 색상, 글꼴, 간격, 테두리, 배경, 시각 효과 등을 자유롭게 꾸밀 수 있음.
