@@ -3,8 +3,6 @@
 
 # Chapter 1. Web Basics
 
-**Key Points:**
-
 - **Purpose and Structure of the Web**  
   The web was created to share and view documents across multiple computers. Web documents are specifically designed for the web, distinct from other electronic documents. The World Wide Web (WWW) is a network of information, interconnected like a spider’s web, using the internet as its foundation.
 - **Web Components**  
@@ -38,8 +36,6 @@
 <summary>KOR (한국어 버전)</summary>
 
 # 1장. 웹 기초
-
-**핵심 내용:**
 
 - **웹의 목적 및 구조**  
   웹은 여러 컴퓨터에 걸쳐 문서를 공유 및 열람하기 위해 만들어진 정보망임. 웹 문서는 타 전자문서와는 구별되는 웹 전용 문서로, 인터넷 기반의 거미줄 형태 네트워크로 정보를 연결함.
