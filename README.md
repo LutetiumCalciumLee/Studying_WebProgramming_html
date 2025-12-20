@@ -10,7 +10,7 @@
 - Additional semantic tags like `<aside>`, `<figure>`, `<figcaption>`, `<mark>`, `<time>`, `<progress>`, `<output>`, and `<details>` provide further structure and meaning to block and inline elements.
 - Semantic elements define document structure and content meaning, but the appearance and layout are controlled separately by CSS.
 
-***
+
 
 ### Web Forms in HTML5
 
@@ -41,7 +41,7 @@
 - 추가적으로 `<aside>`, `<figure>`, `<figcaption>`, `<mark>`, `<time>`, `<progress>`, `<output>`, `<details>` 등도 블록 및 인라인 콘텐츠에 의미와 구조를 제공함.
 - 시맨틱 태그는 문서의 구조와 의미를 정의하며, 레이아웃과 스타일은 CSS로 별도 제어함.
 
-***
+
 
 ### HTML5 웹 폼
 
