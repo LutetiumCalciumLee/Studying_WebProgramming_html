@@ -1,43 +1,53 @@
 <details>
 <summary>ENG (English Version)</summary>
 
-## Web Programming Practice
+# Web Programming
 
-### Introduction
-Welcome to my web programming practice!  
-This repository contains simple exercises and small projects I worked on while learning web programming in class.  
-All code here is based on what I have learned so far, and I am continuously updating this repository as I study new topics.
+## Core Web Structure
+HTML5 documents use `<!DOCTYPE html>`, `<html lang="ko">`, `<head>` for metadata/title/CSS links, and `<body>` for visible content.
+Semantic tags like `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>` define page structure for better accessibility and SEO.
+Forms use `<form>`, various `<input type="">` (email, date, range, color), `<label>`, `<fieldset>`, `<datalist>` with built-in validation.
 
-### Contents
-- Basic HTML & CSS pages  
-- Simple JavaScript exercises  
-- Small practice projects from class  
+## CSS3 Styling Systems
+CSS applies via inline `style=""`, internal `<style>`, or external `<link rel="stylesheet">`; selectors include tags, classes (`.class`), IDs (`#id`), attributes, pseudo-classes (`:hover`, `:focus`).
+Box model controls content, padding, border, margin; properties like `border-radius`, `box-shadow`, `text-shadow` create modern effects.
+Advanced: `position` (static/relative/absolute/fixed), `float`, `z-index`, `@keyframes` animations, `transform` (rotate/scale), 3D `perspective`.
 
-### What I'm Learning
-- HTML & CSS basics  
-- Introduction to JavaScript  
-- How to structure web pages  
+## JavaScript Fundamentals
+Variables use `var`/`let`/`const`; dynamic typing supports numbers/strings/booleans/arrays/objects; operators include arithmetic/comparison/logical.
+Control flow: `if/else`, `switch`, `for/while/do-while` loops; functions defined with `function name() {}` support parameters/returns.
+Core objects: `Date` (getFullYear/month), `String` (length/charAt/replace), `Math` (random/floor), `Array` (push/pop/sort/slice).
+
+## DOM/BOM/Event Handling
+DOM accessed via `document.getElementById/className/querySelector`; modify with `.innerHTML`, `.style`, `.classList`.
+BOM: `window.open/close`, `location.href`, `navigator.userAgent`, `screen.width`, `history.back()`; timers `setTimeout/setInterval`.
+Events: `addEventListener('click', func)`, event object (`e.target`, `e.offsetX`), mouse/keyboard/form events with bubbling/capturing.
 
 </details>
 
 <details>
 <summary>KOR (한국어 버전)</summary>
 
-## 웹 프로그래밍 실습
+# 웹프로그래밍
 
-### 소개
-웹 프로그래밍 실습 리포지토리에 오신 것을 환영합니다!  
-여기에는 수업 시간에 학습한 내용을 바탕으로 진행한 간단한 실습과 미니 프로젝트가 포함되어 있습니다.  
-지금까지 배운 내용을 코드로 정리하였으며, 새로운 주제를 공부할 때마다 지속적으로 업데이트하고 있습니다.
+## 웹 핵심 구조
+HTML5 문서는 `<!DOCTYPE html>`, `<html lang="ko">`, `<head>`(메타/제목/CSS), `<body>`(가시 콘텐츠)로 구성.
+`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>` 시맨틱 태그로 접근성/SEO 향상.
+폼: `<form>`, `<input type="email/date/range/color">`, `<label>`, `<fieldset>`, `<datalist>` 내장 검증 지원.
 
-### 주요 내용
-- 기본 HTML & CSS 페이지  
-- 간단한 JavaScript 실습 예제  
-- 수업 중 진행한 소규모 프로젝트  
+## CSS3 스타일링 체계
+인라인 `style=""`, 내부 `<style>`, 외부 `<link rel="stylesheet">` 적용; 태그/클래스(`.class`)/ID(`#id`)/속성/의사클래스(`:hover`/:focus`) 선택자.[file:51]
+박스모델: content/padding/border/margin 제어; `border-radius`, `box-shadow`, `text-shadow` 현대적 효과.
+고급: `position`(static/relative/absolute/fixed), `float`, `z-index`, `@keyframes` 애니메이션, `transform`(회전/크기), 3D `perspective`.
 
-### 학습 중인 내용
-- HTML & CSS 기초  
-- JavaScript 입문  
-- 웹 페이지 구조 설계 방법  
+## 자바스크립트 기초
+`var`/`let`/`const` 변수; 동적 타입(숫자/문자열/불린/배열/객체); 산술/비교/논리 연산자.
+제어문: `if/else`, `switch`, `for/while/do-while`; `function name() {}` 매개변수/반환 지원.
+코어 객체: `Date`(getFullYear/month), `String`(length/charAt/replace), `Math`(random/floor), `Array`(push/pop/sort/slice).
+
+## DOM/BOM/이벤트 처리
+DOM: `getElementById/className/querySelector`; `.innerHTML`, `.style`, `.classList` 수정.
+BOM: `window.open/close`, `location.href`, `navigator.userAgent`, `screen.width`, `history.back()`; `setTimeout/setInterval` 타이머.
+이벤트: `addEventListener('click', func)`, 이벤트 객체(`e.target`, `e.offsetX`), 마우스/키보드/폼 이벤트 버블링/캡처링.
 
 </details>
