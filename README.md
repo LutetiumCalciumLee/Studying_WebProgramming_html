@@ -1,43 +1,45 @@
 <details>
 <summary>ENG (English Version)</summary>
 
-## Web Programming Practice
+# Chapter 10. JavaScript BOM (Browser Object Model)
 
-### Introduction
-Welcome to my web programming practice!  
-This repository contains simple exercises and small projects I worked on while learning web programming in class.  
-All code here is based on what I have learned so far, and I am continuously updating this repository as I study new topics.
+### BOM Overview and Core Objects
+- BOM objects (`window`, `navigator`, `location`, `screen`, `history`) control browser features independent of HTML content, lacking international standards with browser variations.
+- `window` represents browser/tab windows; created on page load, iframes, or `window.open()`; accessed via `window`, `window.self`, or `self`.
 
-### Contents
-- Basic HTML & CSS pages  
-- Simple JavaScript exercises  
-- Small practice projects from class  
+### Window Control Methods
+- `window.open(url, name, features)` opens windows with position/size control (`left=10,top=10,width=300,height=400`); names like `_blank`, `_self` control reuse.
+- `window.close()` closes current or opened windows; `moveBy()`, `moveTo()`, `resizeBy()`, `resizeTo()` adjust position/size (browser security may restrict).
 
-### What I'm Learning
-- HTML & CSS basics  
-- Introduction to JavaScript  
-- How to structure web pages  
+### Timers and Scrolling
+- `setTimeout(func, ms)`/`clearTimeout(id)` for one-time delays; `setInterval(func, ms)`/`clearInterval(id)` for repeated execution; examples include auto-navigation and rotating text.
+- `scrollBy(x,y)`, `scrollTo(x,y)` control page scrolling; `print()` triggers print dialog with `onbeforeprint`/`onafterprint` for print-specific formatting.
+
+### Utility Objects
+- `location` manages URLs (`href`, `pathname`, `hash`); loads pages via `location.href = "url"` or `location.replace()` (no history entry).
+- `navigator` provides browser info (`appName`, `userAgent`, `plugins`); `screen` gives display details (`width`, `height`, `availWidth`); `history` enables `back()`/`forward()` navigation.
 
 </details>
 
 <details>
 <summary>KOR (한국어 버전)</summary>
 
-## 웹 프로그래밍 실습
+# 10장. 자바스크립트 BOM (Browser Object Model)
 
-### 소개
-웹 프로그래밍 실습 리포지토리에 오신 것을 환영합니다!  
-여기에는 수업 시간에 학습한 내용을 바탕으로 진행한 간단한 실습과 미니 프로젝트가 포함되어 있습니다.  
-지금까지 배운 내용을 코드로 정리하였으며, 새로운 주제를 공부할 때마다 지속적으로 업데이트하고 있습니다.
+### BOM 개요와 핵심 객체
+- HTML과 무관한 브라우저 제어용 BOM 객체(`window`, `navigator`, `location`, `screen`, `history`) 소개, 국제 표준 없어 브라우저별 차이 존재.
+- `window` 객체는 브라우저/탭 윈도우를 나타내며, 페이지 로드, iframe, `window.open()` 시 생성, `window`/`self`로 접근.
 
-### 주요 내용
-- 기본 HTML & CSS 페이지  
-- 간단한 JavaScript 실습 예제  
-- 수업 중 진행한 소규모 프로젝트  
+### 윈도우 제어 메서드
+- `window.open(url, 이름, 속성)`으로 새 윈도우 열기, 위치/크기 지정(`left=10,top=10,width=300,height=400`), `_blank`/`_self` 등 이름으로 재사용 제어.
+- `window.close()`로 현재/생성된 윈도우 닫기, `moveBy()`/`moveTo()`/`resizeBy()`/`resizeTo()`로 위치/크기 조절(보안 제한 가능).
 
-### 학습 중인 내용
-- HTML & CSS 기초  
-- JavaScript 입문  
-- 웹 페이지 구조 설계 방법  
+### 타이머와 스크롤링
+- `setTimeout(func, ms)`/`clearTimeout(id)` 일회 실행, `setInterval(func, ms)`/`clearInterval(id)` 반복 실행, 자동 연결/텍스트 회전 예제.
+- `scrollBy(x,y)`/`scrollTo(x,y)` 페이지 스크롤 제어, `print()` 인쇄 대화상자, `onbeforeprint`/`onafterprint` 인쇄 전용 포맷팅.
+
+### 유틸리티 객체
+- `location`으로 URL 관리(`href`, `pathname`, `hash`), `location.href="url"` 또는 `replace()`로 페이지 로드(히스토리 미생성).
+- `navigator` 브라우저 정보(`appName`, `userAgent`, `plugins`), `screen` 디스플레이 정보(`width`, `height`), `history`로 `back()`/`forward()` 이동.
 
 </details>
