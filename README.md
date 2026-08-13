@@ -2,26 +2,27 @@
 <summary>ENG (English Version)</summary>
 
 # Web Programming
+This repository contains my notes and code from studying HTML, CSS, and JavaScript during the High-Tech Program in the Department of AI Software.
 
-## Core Web Structure
-HTML5 documents use `<!DOCTYPE html>`, `<html lang="ko">`, `<head>` for metadata/title/CSS links, and `<body>` for visible content.
-Semantic tags like `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>` define page structure for better accessibility and SEO.
-Forms use `<form>`, various `<input type="">` (email, date, range, color), `<label>`, `<fieldset>`, `<datalist>` with built-in validation.
+## [Chapter 1. Web Basics](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.01)
 
-## CSS3 Styling Systems
-CSS applies via inline `style=""`, internal `<style>`, or external `<link rel="stylesheet">`; selectors include tags, classes (`.class`), IDs (`#id`), attributes, pseudo-classes (`:hover`, `:focus`).
-Box model controls content, padding, border, margin; properties like `border-radius`, `box-shadow`, `text-shadow` create modern effects.
-Advanced: `position` (static/relative/absolute/fixed), `float`, `z-index`, `@keyframes` animations, `transform` (rotate/scale), 3D `perspective`.
+## [Chapter 2. HTML5 Basic Document Contents](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.02)
 
-## JavaScript Fundamentals
-Variables use `var`/`let`/`const`; dynamic typing supports numbers/strings/booleans/arrays/objects; operators include arithmetic/comparison/logical.
-Control flow: `if/else`, `switch`, `for/while/do-while` loops; functions defined with `function name() {}` support parameters/returns.
-Core objects: `Date` (getFullYear/month), `String` (length/charAt/replace), `Math` (random/floor), `Array` (push/pop/sort/slice).
+## [Chapter 3. HTML5 Document Structuring and Web Forms](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.03)
 
-## DOM/BOM/Event Handling
-DOM accessed via `document.getElementById/className/querySelector`; modify with `.innerHTML`, `.style`, `.classList`.
-BOM: `window.open/close`, `location.href`, `navigator.userAgent`, `screen.width`, `history.back()`; timers `setTimeout/setInterval`.
-Events: `addEventListener('click', func)`, event object (`e.target`, `e.offsetX`), mouse/keyboard/form events with bubbling/capturing.
+## [Chapter 4. Styling Web Pages with CSS3](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.04)
+
+## [Chapter 5. Advanced CSS3 Usage](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.05)
+
+## [Chapter 6. JavaScript Basics](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.06)
+
+## [Chapter 7. JavaScript Core Objects and Arrays(1)](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.07)
+
+## [Chapter 8. JavaScript Core Objects and Arrays(2)](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.08)
+
+## [Chapter 9. JavaScript Events and Event Listeners](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.09)
+
+## [Chapter 10. JavaScript BOM (Browser Object Model)](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/Ch.10)
 
 </details>
 
