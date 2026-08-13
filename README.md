@@ -1,7 +1,7 @@
 <details>
 <summary>ENG (English Version)</summary>
 
-# Chapter 7. JavaScript Core Objects and Arrays
+# Chapter 7. JavaScript Core Objects and Arrays(1)
 
 ### Object Concepts
 - In JavaScript, an object is a collection of properties (data) and methods (functions).
@@ -44,7 +44,7 @@
 <details>
 <summary>KOR (한국어 버전)</summary>
 
-# 7장. 자바스크립트 핵심 객체와 배열
+# 7장. 자바스크립트 핵심 객체와 배열(1)
 
 ### 객체 개념
 - 자바스크립트에서 객체는 속성(데이터)과 메서드(함수)로 이루어진 집합임.
