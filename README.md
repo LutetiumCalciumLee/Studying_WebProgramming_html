@@ -1,7 +1,7 @@
 <details>
 <summary>ENG (English Version)</summary>
 
-# Chapter 8. JavaScript Core Objects and Arrays
+# Chapter 8. JavaScript Core Objects and Arrays(2)
 
 ### Object Basics and Types
 - Explains objects as collections of properties and methods, using real‑world examples like bank accounts to show how state and behavior are modeled in JavaScript.
@@ -24,7 +24,7 @@
 <details>
 <summary>KOR (한국어 버전)</summary>
 
-# 8장. 자바스크립트 핵심 객체와 배열
+# 8장. 자바스크립트 핵심 객체와 배열(2)
 
 ### 객체 기본 개념과 종류
 - 객체를 속성(프로퍼티)과 메서드로 구성된 단위로 소개하고, 은행 계좌 등 예시로 자바스크립트에서 상태와 동작을 함께 표현하는 방식을 설명함.
