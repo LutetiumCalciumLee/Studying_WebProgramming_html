@@ -30,25 +30,26 @@ This repository contains my notes and code from studying HTML, CSS, and JavaScri
 <summary>KOR (한국어 버전)</summary>
 
 # 웹프로그래밍
+이 레포지토리에는 인공지능소프트웨어과 하이테크 과정에서 학습한 웹프로그래밍(HTML, CSS, JavaScript) 내용과 코드를 정리하여 업로드했습니다.
 
-## 웹 핵심 구조
-HTML5 문서는 `<!DOCTYPE html>`, `<html lang="ko">`, `<head>`(메타/제목/CSS), `<body>`(가시 콘텐츠)로 구성.
-`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>` 시맨틱 태그로 접근성/SEO 향상.
-폼: `<form>`, `<input type="email/date/range/color">`, `<label>`, `<fieldset>`, `<datalist>` 내장 검증 지원.
+## [1장. 웹 기초](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.01)
 
-## CSS3 스타일링 체계
-인라인 `style=""`, 내부 `<style>`, 외부 `<link rel="stylesheet">` 적용; 태그/클래스(`.class`)/ID(`#id`)/속성/의사클래스(`:hover`/:focus`) 선택자.[file:51]
-박스모델: content/padding/border/margin 제어; `border-radius`, `box-shadow`, `text-shadow` 현대적 효과.
-고급: `position`(static/relative/absolute/fixed), `float`, `z-index`, `@keyframes` 애니메이션, `transform`(회전/크기), 3D `perspective`.
+## [2장. HTML5 기본 문서 내용](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.02)
 
-## 자바스크립트 기초
-`var`/`let`/`const` 변수; 동적 타입(숫자/문자열/불린/배열/객체); 산술/비교/논리 연산자.
-제어문: `if/else`, `switch`, `for/while/do-while`; `function name() {}` 매개변수/반환 지원.
-코어 객체: `Date`(getFullYear/month), `String`(length/charAt/replace), `Math`(random/floor), `Array`(push/pop/sort/slice).
+## [3장. HTML5 문서 구조화와 웹 폼](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.03)
 
-## DOM/BOM/이벤트 처리
-DOM: `getElementById/className/querySelector`; `.innerHTML`, `.style`, `.classList` 수정.
-BOM: `window.open/close`, `location.href`, `navigator.userAgent`, `screen.width`, `history.back()`; `setTimeout/setInterval` 타이머.
-이벤트: `addEventListener('click', func)`, 이벤트 객체(`e.target`, `e.offsetX`), 마우스/키보드/폼 이벤트 버블링/캡처링.
+## [4장. CSS3를 이용한 웹 페이지 스타일링](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.04)
+
+## [5장. 고급 CSS3 활용법](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.05)
+
+## [6장. 자바스크립트 기초](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.06)
+
+## [7장. 자바스크립트 핵심 객체와 배열(1)](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.07)
+
+## [8장. 자바스크립트 핵심 객체와 배열(2)](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.08)
+
+## [9장. 자바스크립트 이벤트와 이벤트 리스너](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.09)
+
+## [10장. 자바스크립트 BOM (Browser Object Model)](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/Ch.10)
 
 </details>
