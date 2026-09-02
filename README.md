@@ -2,7 +2,7 @@
 <summary>ENG (English Version)</summary>
 
 # Web Programming
-This repository contains my notes and code from studying HTML, CSS, and JavaScript during the High-Tech Program in the Department of AI Software.
+This repository contains my notes and code from studying HTML, CSS, and JavaScript as part of the AI Software High-Tech Program.
 
 ## [Chapter 1. Web Basics](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.01)
 
@@ -30,7 +30,7 @@ This repository contains my notes and code from studying HTML, CSS, and JavaScri
 <summary>KOR (한국어 버전)</summary>
 
 # 웹프로그래밍
-이 레포지토리에는 인공지능소프트웨어과 하이테크 과정에서 학습한 웹프로그래밍(HTML, CSS, JavaScript) 내용과 코드를 정리하여 업로드했습니다.
+이 Repository에는 인공지능소프트웨어과 하이테크 과정에서 학습한 웹프로그래밍(HTML, CSS, JavaScript) 내용과 코드를 정리하여 업로드했습니다.
 
 ## [1장. 웹 기초](https://github.com/LutetiumCalciumLee/Studying_HTML_CSS_JavaScript/tree/CH.01)
 
